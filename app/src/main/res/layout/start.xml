@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#B60808"
+    tools:context=".start">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="61dp"
+            android:layout_height="52dp"
+            android:layout_gravity="left"
+            android:background="@mipmap/help"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.002"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <pl.droidsonroids.gif.GifImageView
+            android:id="@+id/gifImageView"
+            android:layout_width="501dp"
+            android:layout_height="435dp"
+            android:layout_marginBottom="72dp"
+            android:foregroundGravity="bottom"
+            android:src="@drawable/taur4"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="244dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="196dp"
+            android:textColor="#030303"
+            android:textColorHighlight="#CCE20909"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="207dp"
+            android:layout_height="231dp"
+            android:layout_marginTop="284dp"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@mipmap/about" />
+
+        <Button
+            android:id="@+id/startbtn"
+            android:layout_width="132dp"
+            android:layout_height="64dp"
+            android:layout_marginBottom="16dp"
+            android:background="@mipmap/start"
+            android:gravity="center"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent" />
+
+
+        <RadioGroup
+            android:id="@+id/radioGroup2"
+            android:layout_width="301dp"
+            android:layout_height="174dp"
+            android:layout_marginTop="4dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.654"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <RadioButton
+                android:id="@+id/mono"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Monoplayer" />
+
+            <RadioGroup
+                android:id="@+id/radio"
+                android:layout_width="221dp"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:visibility="visible">
+
+                <RadioButton
+                    android:id="@+id/radio1"
+                    android:layout_width="134dp"
+                    android:layout_height="wrap_content"
+                    android:text="Easy" />
+
+                <RadioButton
+                    android:id="@+id/radio2"
+                    android:layout_width="133dp"
+                    android:layout_height="wrap_content"
+                    android:text="Intermediary" />
+
+                <RadioButton
+                    android:id="@+id/radio3"
+                    android:layout_width="134dp"
+                    android:layout_height="wrap_content"
+                    android:text="Hard" />
+            </RadioGroup>
+
+            <RadioButton
+                android:id="@+id/multi"
+                android:layout_width="292dp"
+                android:layout_height="59dp"
+                android:text="Multiplayer" />
+
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/base"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="72dp"
+            android:layout_marginBottom="24dp"
+            android:text="Consulter les données de base "
+            app:layout_constraintBottom_toTopOf="@+id/startbtn"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.038"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="close"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</RelativeLayout>

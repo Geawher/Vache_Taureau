@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/tete"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context=".inscrire">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        tools:context=".MainActivity">
+
+
+        <EditText
+            android:id="@+id/nom"
+            android:layout_width="220dp"
+            android:layout_height="65dp"
+            android:layout_marginTop="150dp"
+            android:hint="Saisir Identifiant"
+            android:textColor="#3F51B5" />
+
+        <EditText
+            android:id="@+id/passe"
+            android:layout_width="220dp"
+            android:layout_height="65dp"
+            android:layout_marginTop="20dp"
+            android:hint="saisir_le_mot_de_passe"
+            android:password="true"
+            android:textColor="#3F51B5" />
+
+        <EditText
+            android:id="@+id/passe2"
+            android:layout_width="220dp"
+            android:layout_height="65dp"
+            android:layout_marginTop="20dp"
+            android:hint="confirmer_mot_de_passe"
+            android:password="true"
+            android:textColor="#3F51B5" />
+
+
+        <Button
+            android:id="@+id/inscrire"
+            android:layout_width="152dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="S'Inscrire"
+            android:textSize="21dp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/connexion"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:layout_marginTop="20dp"
+                android:text="connexion"
+                android:textColor="#ffff"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>
